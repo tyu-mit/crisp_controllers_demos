@@ -1,3 +1,12 @@
+# CRISP Controllers Demos Docker Compose Configuration
+#
+# To use local modified crisp_controllers instead of GitHub version:
+# Run: ./scripts/build_with_local_crisp_controllers.sh [PATH_TO_CRISP_CONTROLLERS] [TARGET]
+# Examples:
+#   ./scripts/build_with_local_crisp_controllers.sh ../crisp_controllers franka-overlay
+#   ./scripts/build_with_local_crisp_controllers.sh /path/to/crisp_controllers kinova-overlay
+#   ./scripts/build_with_local_crisp_controllers.sh ../crisp_controllers iiwa-overlay
+
 x-cameras-base: &cameras-base
   build:
     context: .
